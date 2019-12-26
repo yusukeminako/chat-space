@@ -8,6 +8,7 @@
 |nickname|string|null: false|
 ### Association
 - has_many :group
+- has_many :groups_users
 
 ## groupテーブル
 |Column|Type|Options|
@@ -17,7 +18,7 @@
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :users
-
+- has_many :groups_users
 
 ## groups_usersテーブル
 
