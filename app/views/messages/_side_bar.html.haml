@@ -1,0 +1,20 @@
+.side_bar
+  .side__header
+    .top-items
+      %p.top-items__user__name
+        山田莉央
+      %ul.top-items__top-item
+        %li.label{class: "top-items__top-item"}
+        %span.mgr-17
+        =link_to "#", class: "top-items__top-item" do
+          = icon('fas', 'edit')
+        %span.mgr-5
+        %label{class: "top-items__top-item"}
+        =link_to "#", class: "top-items__top-item" do
+          = icon('fas', 'cog')
+  .chat__side
+    .group
+      %p.group__group-name
+        山田
+      %p.group__latest-message
+        まだメッセージはありません
