@@ -2,7 +2,7 @@
   .side__header
     .top-items
       %p.top-items__user__name
-        山田莉央
+        = current_user.name
       %ul.top-items__top-item
         %li.label{class: "top-items__top-item"}
         %span.mgr-17
@@ -10,8 +10,8 @@
           = icon('fas', 'edit')
         %span.mgr-5
         %label{class: "top-items__top-item"}
-        =link_to "#", class: "top-items__top-item" do
-          = icon('fas', 'cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .chat__side
     .group
       %p.group__group-name
