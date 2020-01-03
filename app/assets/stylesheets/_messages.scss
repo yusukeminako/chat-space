@@ -53,7 +53,7 @@
       position: relative;
 
       .name__box{
-        .group-name{
+        &__group-name{
           padding-top: 35px;
           font-size: 20px;
           color: #333333;
@@ -61,7 +61,7 @@
           left:40px;
           bottom: 27px;
         }
-        .Member-name{
+        &__Member-name{
           color: #999999;
           padding-top: 15px;
           font-size: 12px;
@@ -91,7 +91,7 @@
       top: 621px;
       display: flex;
       justify-content: space-between;
-      .main__form__box{
+      &__box{
         height: 70px;
         width: 100%;
         margin-top: 10px;
@@ -110,8 +110,7 @@
           top: 35px;
           input{
             display: none;
-          }
-          
+          }          
         }
       }
       .main__form__btn{
