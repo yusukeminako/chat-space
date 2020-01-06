@@ -151,14 +151,12 @@
           color: #ffffff;
           font-size: 16px;
         }
-        .mgr-17{
-          margin-right: 17px;
-        }
         .mgr-5{
           margin-right: 5px;
         }
         &__top-item{
-          width: 60px;
+          display: flex;
+          justify-content: flex-end;
           line-height:20px;
           color: #ffffff;
         }
@@ -167,7 +165,7 @@
     }
   }
  
-  .chat__side{
+  .groups{
     background-color: #2f3e51;
     float: left;
     height:100vh;
@@ -176,11 +174,12 @@
     padding-top: 120px;
       .group{
         padding-left: 20px;
-        &__group-name{
+        padding-bottom: 40px;
+        &__name{
           font-size: 15px;
           color: #ffffff;
         }
-        &__latest-message{
+        &__message{
           font-size: 11px;
           color: #ffffff
         }
