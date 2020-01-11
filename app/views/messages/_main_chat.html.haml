@@ -7,14 +7,12 @@
         Members:
         - @group.users.each do |user|
           %span.chat-header__user #{user.name}
-      .chat-header--right
-        = link_to 'Edit', edit_group_path(@group), class: 'name__box__edit-btn'
-
+    .chat-header--right
+      = link_to edit_group_path(@group), class: 'name__box__edit-btn' do
+        Edit
+  .messages
     = render @messages
-    .messagebox
-      %p.messagebox__name 
-      %p.messagebox__date 
-      %p.message__content
+
 
   .form
     = form_for [@group, @message] do |f|
