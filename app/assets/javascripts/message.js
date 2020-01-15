@@ -77,9 +77,10 @@ $.ajax({
   console.log(data)
   var html = buildHTML(data);
   // console.log(html)
+  $('.new_message')[0].reset();
   $('.messages').append(html);
   $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
-  $('.form__submit')[0].prop('disabled', false);
+  $('.form__submit').prop('disabled', false);
 })
 .fail(function(){
   alert('error');
