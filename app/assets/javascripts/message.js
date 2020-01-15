@@ -1,6 +1,5 @@
 $(function(){ 
   var buildHTML = function(message) { 
-    console.log(message)
   if (message.content && message.image) {
     //data-idが反映されるようにしている
     var html = `<div class="message" data-message-id="${message.id}">
@@ -74,9 +73,7 @@ $.ajax({
   contentType: false
 })
 .done(function(data){
-  console.log(data)
   var html = buildHTML(data);
-  // console.log(html)
   $('.new_message')[0].reset();
   $('.messages').append(html);
   $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
