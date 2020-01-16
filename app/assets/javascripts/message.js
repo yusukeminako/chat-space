@@ -82,7 +82,7 @@ $.ajax({
 .fail(function(){
   alert('error');
 });
-
+});
 var reloadMessages = function() {
   //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
   last_message_id = $('.message:last').data("message-id");
@@ -116,5 +116,5 @@ var reloadMessages = function() {
 if (document.location.href.match(/\/groups\/\d+\/messages/)) {
   setInterval(reloadMessages, 7000);
 }
-});
+
 });
