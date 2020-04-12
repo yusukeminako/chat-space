@@ -45,6 +45,7 @@
         box-sizing: border-box;
         padding: 46px 40px 0;
         height: calc(100vh - 100px - 90px);
+        // はみ出た部分が隠れてスクロールができる状態に
         overflow: scroll;
         .message {
           .upper-message {

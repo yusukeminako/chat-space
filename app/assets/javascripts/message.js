@@ -71,7 +71,7 @@ $.ajax({
   dataType: 'json',
   processData: false,
   contentType: false
-})
+})-
 .done(function(data){
   var html = buildHTML(data);
   $('.new_message')[0].reset();
